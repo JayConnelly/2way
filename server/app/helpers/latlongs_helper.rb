@@ -1,0 +1,2 @@
+module LatlongsHelper
+end

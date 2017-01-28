@@ -1,0 +1,18 @@
+<h1> LatLongs view </h1>
+
+
+<%= form_for :latlong, url: latlongs_path do |f| %>
+  <p>
+    <%= f.label :lattitude %><br>
+    <%= f.text_field :lattitude %>
+  </p>
+ 
+  <p>
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
