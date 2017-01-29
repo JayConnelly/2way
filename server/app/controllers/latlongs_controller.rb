@@ -1,8 +1,12 @@
 class LatlongsController < ApplicationController
+
+    def index
+		@latlongs = Latlong.all
+    end
+	
 	def show
 		@latlong = Latlong.find(params[:id])
-		@tmpVar = '{ "name":"John" }'
-		
+		@tmpVar = '{ "name" : "John" }';
 	end
 	
 	def new

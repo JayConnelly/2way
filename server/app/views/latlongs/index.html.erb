@@ -1,0 +1,16 @@
+<h1>Listing articles</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @latlongs.each do |ll| %>
+    <tr>
+      <td><%= ll.lattitude %></td>
+      <td><%= ll.longitude %></td>
+      <td><%= link_to 'Show', latlong_path(ll) %></td>
+    </tr>
+  <% end %>
+</table>
